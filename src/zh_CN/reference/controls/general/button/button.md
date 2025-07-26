@@ -48,7 +48,7 @@ AtomUI提供了多种风格的按钮，用户可以按形状、尺寸、颜色�
 <atom:Button SizeType="Large">Text</atom:Button>
 ```
 
-## 图标用例
+## 自定义图标用例
 
 ![](./images/icon-button.webp)
 
