@@ -2,7 +2,9 @@
 
 AtomUI提供了多种风格的按钮，用户可以按形状、尺寸、颜色、图标和文字等不同维度进行组合，生成最终满足自己需求的按钮。
 
-## 基本用法
+## 用例
+
+### 基本用法
 
 ![](./images/basic-button.webp)
 
@@ -13,7 +15,7 @@ AtomUI提供了多种风格的按钮，用户可以按形状、尺寸、颜色�
 <atom:Button ButtonType="Link">Link Button</atom:Button>
 ```
 
-## 外观用例
+### 外观用例
 
 ![](./images/button-shape.webp)
 
@@ -35,7 +37,7 @@ AtomUI提供了多种风格的按钮，用户可以按形状、尺寸、颜色�
 <atom:Button ButtonType="Link" Shape="Circle">AA</atom:Button>
 ```
 
-## 大小用例
+### 大小用例
 
 ![](./images/button-size.webp)
 
@@ -48,7 +50,7 @@ AtomUI提供了多种风格的按钮，用户可以按形状、尺寸、颜色�
 <atom:Button SizeType="Large">Text</atom:Button>
 ```
 
-## 自定义图标用例
+### 自定义图标用例
 
 ![](./images/icon-button.webp)
 
@@ -75,7 +77,7 @@ AtomUI提供了多种风格的按钮，用户可以按形状、尺寸、颜色�
              Icon="{atom:IconProvider Kind=SearchOutlined}">Search</atom:Button>
 ```
 
-## 加载动画用例
+### 加载动画用例
 
 ![](./images/load-button.webp)
 
@@ -85,7 +87,7 @@ AtomUI提供了多种风格的按钮，用户可以按形状、尺寸、颜色�
 <atom:Button ButtonType="Primary" IsLoading="True" Icon="{atom:IconProvider Kind=PoweroffOutlined}" />
 ```
 
-## 块级用例
+### 块级用例
 
 ![](./images/block-button.webp)
 
@@ -102,7 +104,7 @@ AtomUI提供了多种风格的按钮，用户可以按形状、尺寸、颜色�
              HorizontalAlignment="Stretch">Link</atom:Button>
 ```
 
-## 危险用例
+### 危险用例
 
 ![](./images/danger-button.webp)
 
@@ -115,7 +117,7 @@ AtomUI提供了多种风格的按钮，用户可以按形状、尺寸、颜色�
 <atom:Button ButtonType="Link" IsDanger="True">Link</atom:Button>
 ```
 
-## 幽灵用例
+### 幽灵用例
 
 ![](./images/ghost-button.webp)
 
@@ -129,7 +131,7 @@ AtomUI提供了多种风格的按钮，用户可以按形状、尺寸、颜色�
 <atom:Button ButtonType="Primary" IsDanger="True" IsGhost="True">Danger</atom:Button>
 ```
 
-## 禁用用例
+### 禁用用例
 
 ![](./images/disabled-button.webp)
 
@@ -144,14 +146,14 @@ AtomUI提供了多种风格的按钮，用户可以按形状、尺寸、颜色�
 
 ## 属性
 
-| 属性 | 说明 |                           类型                            |        默认值        |
-|:----:|:----:|:-------------------------------------------------------:|:-----------------:|
-| `ButtonType` | 按钮类型（默认、主要、链接、文本） |         ButtonType : Default,Primary,Link,Text          |     `Default`     |
-| `Shape` | 按钮形状（默认、圆形、圆角） |              Shape : Default,Circle,Round               |     `Default`     |
-| `IsDanger` | 是否危险按钮（红色警示） |                         `bool`                          |      `False`      |
-| `IsGhost` | 是否幽灵按钮（透明背景） |                         `bool`                          |      `False`      |
-| `IsLoading` | 是否加载中状态 |                         `bool`                          |      `False`      |
-| `SizeType` | 按钮尺寸类型 |              SizeType : Large、Middle、Small              |     依赖绑定值或默认      |
-| `Icon` | 按钮图标 |                         `Icon?`                         |      `null`       |
-| `IsMotionEnabled` | 是否启用动效动画 |                         `bool`                          | `False`（受默认绑定值控制） |
-| `IsWaveSpiritEnabled` | 是否启用点击波纹特效 |                         `bool`                          | `False`（受默认绑定值控制） |
+| 属性 | 说明 |                   类型                   |        默认值        |
+|:----:|:----:|:--------------------------------------:|:-----------------:|
+| `ButtonType` | 按钮类型（默认、主要、链接、文本） | `ButtonType : Default,Primary,Link,Text` |     `Default`     |
+| `Shape` | 按钮形状（默认、圆形、圆角） |      `Shape : Default,Circle,Round`      |     `Default`     |
+| `IsDanger` | 是否危险按钮（红色警示） |                 `bool`                 |      `False`      |
+| `IsGhost` | 是否幽灵按钮（透明背景） |                 `bool`                 |      `False`      |
+| `IsLoading` | 是否加载中状态 |                 `bool`                 |      `False`      |
+| `SizeType` | 按钮尺寸类型 |     `SizeType : Large、Middle、Small`      |     依赖绑定值或默认      |
+| `Icon` | 按钮图标 |                `Icon?`                 |      `null`       |
+| `IsMotionEnabled` | 是否启用动效动画 |                 `bool`                 | `False`（受默认绑定值控制） |
+| `IsWaveSpiritEnabled` | 是否启用点击波纹特效 |                 `bool`                 | `False`（受默认绑定值控制） |
